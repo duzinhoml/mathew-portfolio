@@ -149,7 +149,7 @@ main {
 }
 
 .flex-container {
-  display: relative;
+  position: relative;
   flex-wrap: wrap;
   justify-content: center;
 }
