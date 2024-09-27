@@ -149,7 +149,7 @@ main {
 }
 
 .flex-container {
-  display: flex;
+  display: relative;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -187,8 +187,13 @@ main {
   padding: 8px 10px;
 }
 
-.flex-item h3 {
+.flex-container h3 {
   font-size: 1.6rem;
+  position: absolute;
+  top: 925px;
+  margin-left: 10px;
+  background-color: var(--secondary);
+  padding: 5px 10px;
 }
 
 .contact address {
@@ -222,23 +227,32 @@ main {
 /* portfolio project images */
 /* TODO: Add portfolio project images here using background images*/
 .run-buddy {
-  
+  background-image: url("https://getrunbuddy.app/wp-content/uploads/2019/05/RunBuddyLogo.png");
+  width: 500px;
+  display: inline-block;
 }
 
 .led-wall {
-  
+  background-image: url("https://onewayeventproductions.com/wp-content/uploads/2020/01/Bright-colored-light-LED-video-wall_222779971.jpeg");
+  width: 500px;
+  display: inline-block;
 }
 
 .react-calc {
-  
+  background-image: url("https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/05/a0005475/img/basic/a0005475_main.jpg");
+  width: 500px;
+  display: inline-block;
 }
 
 .pastel-puzzles {
-  
+  background-image: url("https://img.freepik.com/premium-photo/3d-jigsaw-puzzle-wall-with-pastel-colors-offset-elements-background-with-pink-shades-3d-render_550395-429.jpg?w=360");
+  width: 500px;
+  display: inline-block;
 }
 
-.surf-report {
-  
+.horiseon {
+  background-image: url("https://media.istockphoto.com/id/1366137792/photo/business-persons-on-meeting-in-the-office.jpg?s=612x612&w=0&k=20&c=0ya-nb5-ksH44xHreYxOOva9Hku1xcA7LtbfTxeSzNE=");
+  width: 100%
 }
 
 /* media queries */
@@ -275,6 +289,25 @@ main {
     text-align: left;
     font-size: 7vw;
   }
+
+  .flex-container h3 {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 1200px;
+    margin-left: 10px;
+    background-color: var(--secondary);
+    padding: 5px 10px;
+  }
 }
 
 /* TODO: add media query for a max-width of 768px */
+@media screen and (max-width: 768px) {
+  .flex-container h3 {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 1200px;
+    margin-left: 10px;
+    background-color: var(--secondary);
+    padding: 5px 10px;
+  }
+}
